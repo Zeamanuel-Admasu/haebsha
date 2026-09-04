@@ -66,7 +66,7 @@ export function RotatingGarment() {
       <div className="rotating-garment-image" ref={imageRef}>
         <span className="garment-depth-stack" aria-hidden="true">
           <Image
-            src="/images/source/4k/ethiopian-store-garment-cutout-transparent-4k.png"
+            src="/images/source/4k/habesha-garment-cutout-transparent-4k.png"
             alt=""
             width={2556}
             height={3840}
@@ -74,7 +74,7 @@ export function RotatingGarment() {
             className="garment-depth depth-one"
           />
           <Image
-            src="/images/source/4k/ethiopian-store-garment-cutout-transparent-4k.png"
+            src="/images/source/4k/habesha-garment-cutout-transparent-4k.png"
             alt=""
             width={2556}
             height={3840}
@@ -82,7 +82,7 @@ export function RotatingGarment() {
             className="garment-depth depth-two"
           />
           <Image
-            src="/images/source/4k/ethiopian-store-garment-cutout-transparent-4k.png"
+            src="/images/source/4k/habesha-garment-cutout-transparent-4k.png"
             alt=""
             width={2556}
             height={3840}
@@ -91,7 +91,7 @@ export function RotatingGarment() {
           />
         </span>
         <Image
-          src="/images/source/4k/ethiopian-store-garment-cutout-transparent-4k.png"
+          src="/images/source/4k/habesha-garment-cutout-transparent-4k.png"
           alt="Product-only Habesha garment preview without a person"
           width={2556}
           height={3840}
