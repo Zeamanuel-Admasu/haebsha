@@ -3,10 +3,12 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useLanguage } from "@/lib/language";
 
 export function RotatingGarment() {
   const cardRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const card = cardRef.current;
@@ -92,14 +94,14 @@ export function RotatingGarment() {
         </span>
         <Image
           src="/images/source/4k/habesha-garment-cutout-transparent-4k.png"
-          alt="Product-only Habesha garment preview without a person"
+          alt={t("garment.alt")}
           width={2556}
           height={3840}
           className="garment-face"
           sizes="(max-width: 820px) 82vw, 28vw"
         />
       </div>
-      <p>Hover or tap to turn the garment</p>
+      <p>{t("garment.hint")}</p>
     </div>
   );
 }

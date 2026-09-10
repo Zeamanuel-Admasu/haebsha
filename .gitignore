@@ -12,3 +12,5 @@ pnpm-debug.log*
 .vercel/
 Thumbs.db
 *.tsbuildinfo
+.chrome-profile/
+.chrome-profile-mobile/

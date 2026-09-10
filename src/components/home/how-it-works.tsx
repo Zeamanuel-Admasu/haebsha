@@ -1,22 +1,28 @@
+"use client";
+
+import { useLanguage } from "@/lib/language";
+
 const steps = [
-  ["01", "Choose or send your design"],
-  ["02", "Receive your custom price"],
-  ["03", "Confirm your measurements"],
-  ["04", "We make it and deliver it"]
-];
+  ["01", "process.step1"],
+  ["02", "process.step2"],
+  ["03", "process.step3"],
+  ["04", "process.step4"]
+] as const;
 
 export function HowItWorks() {
+  const { t } = useLanguage();
+
   return (
     <section className="section process-section" aria-labelledby="process-title">
       <div className="section-heading reveal-up">
-        <p className="eyebrow">How it works</p>
-        <h2 id="process-title">A considered path from idea to garment.</h2>
+        <p className="eyebrow">{t("process.eyebrow")}</p>
+        <h2 id="process-title">{t("process.title")}</h2>
       </div>
       <ol className="process-list">
-        {steps.map(([number, label]) => (
+        {steps.map(([number, labelKey]) => (
           <li className="process-step" key={number}>
             <span>{number}</span>
-            <p>{label}</p>
+            <p>{t(labelKey)}</p>
           </li>
         ))}
       </ol>

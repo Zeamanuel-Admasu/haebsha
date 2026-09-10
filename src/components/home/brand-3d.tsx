@@ -2,10 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useLanguage } from "@/lib/language";
 
 export function Brand3D() {
   const wrapRef = useRef<HTMLButtonElement>(null);
   const textRef = useRef<HTMLSpanElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -63,7 +65,7 @@ export function Brand3D() {
   }, []);
 
   return (
-    <button className="brand-3d" type="button" ref={wrapRef} aria-label="Animate Qesem Habesha Libs branding">
+    <button className="brand-3d" type="button" ref={wrapRef} aria-label={t("brand.aria")}>
       <span ref={textRef}>
         <span>Qesem</span>
         <span>Habesha Libs</span>
